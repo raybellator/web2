@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form action="#" th:action="@{/salvar}" th:object="${produto}" method="post">
+        <p>Nome: <input type="text" th:field="*{nome}" /></p>
+        <p>Preço: <input type="text" th:field="*{preco}" /></p>
+        <p>Quantidade: <input type="text" th:field="*{quantidade}" /></p>
+        <p><input type="submit" value="SALVAR" /> <input type="reset" value="LIMPAR" /></p>
+    </form>
+</body>
+</html>

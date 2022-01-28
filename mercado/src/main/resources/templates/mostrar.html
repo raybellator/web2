@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Mostrar o Banco</title>
+    </head>
+    <body>
+        <div th:each="produto: ${listaProduto}">
+            <label th:text="${produto.nome}"></label>
+            <label th:text="${produto.preco}"></label>
+            <label th:text="${produto.quantidade}"></label>
+            <br>
+        </div>
+    </body>
+</html>
